@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { DefaultComponent } from './default/default.component';
 
 @NgModule({
@@ -10,7 +11,8 @@ import { DefaultComponent } from './default/default.component';
     DefaultComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class TemplatesModule { }
