@@ -3,14 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TesteDoisComponent } from './components/teste-dois/teste-dois.component';
+import { TesteTresComponent } from './components/teste-tres/teste-tres.component';
+import { TesteUmComponent } from './components/teste-um/teste-um.component';
+import { TesteCincoComponent } from './pages/teste-cinco/teste-cinco.component';
+import { TesteQuadroComponent } from './pages/teste-quadro/teste-quadro.component';
+import { TesteSeisComponent } from './pages/teste-seis/teste-seis.component';
+import { TemplatesModule } from './templates/templates.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TesteUmComponent,
+    TesteDoisComponent,
+    TesteTresComponent,
+    TesteQuadroComponent,
+    TesteCincoComponent,
+    TesteSeisComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TemplatesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
