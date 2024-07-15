@@ -1,31 +1,48 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <raianne-menu></raianne-menu>
+    </div>
+  </div>
+</div>
+
 <div style="background-color: blue; color: white; font-size: 36px; padding: 15px;">
   <ul>
+
     <li style="display: inline; cursor: point; padding: 5px 20px;"
         [routerLinkActive]="['true']"
         [routerLinkActiveOptions]="{ exact: true }"
         [routerLink]="'/rota-quatro'">Página Quatro</li>
+
     <li style="display: inline; cursor: point; padding: 5px 20px;"
         [routerLinkActive]="['true']"
         [routerLinkActiveOptions]="{ exact: true }"
         [routerLink]="'/rota-cinco'">Página Cinco</li>
+
     <li style="display: inline; cursor: point; padding: 5px 20px;"
         [routerLinkActive]="['true']"
         [routerLinkActiveOptions]="{ exact: true }"
         [routerLink]="'/rota-seis'">Página Seis</li>
+
     <li style="display: inline; cursor: point; padding: 5px 20px;"
         [routerLinkActive]="['true']"
         [routerLinkActiveOptions]="{ exact: true }"
         [routerLink]="'/teste-modulo'">Teste Módulo</li>
+
   </ul>
 </div>
 
 <div style="background-color: red; color: white; font-size: 36px; padding: 30px;">
 
-  <raianne-teste-um></raianne-teste-um><br>
-  <raianne-teste-dois></raianne-teste-dois><br>
+  <button class="btn btn-primary" (click)="enviarDados()">Clicar</button>
+
+  <raianne-enviar-dados [dados]="dados" (aoEnviarDados)="receberDados($event)"></raianne-enviar-dados>
+
+  <!-- <raianne-teste-um></raianne-teste-um><br>
+  <raianne-teste-dois></raianne-teste-dois><br> -->
   <div style="padding: 20px; background-color: green;">
     <router-outlet></router-outlet>
   </div>
-  <raianne-teste-tres></raianne-teste-tres>
+  <!-- <raianne-teste-tres></raianne-teste-tres> -->
 
 </div>

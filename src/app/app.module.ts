@@ -10,6 +10,8 @@ import { TesteCincoComponent } from './pages/teste-cinco/teste-cinco.component';
 import { TesteQuadroComponent } from './pages/teste-quadro/teste-quadro.component';
 import { TesteSeisComponent } from './pages/teste-seis/teste-seis.component';
 import { TemplatesModule } from './templates/templates.module';
+import { MenuComponent } from './components/menu/menu.component';
+import { EnviarDadosComponent } from './components/enviar-dados/enviar-dados.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { TemplatesModule } from './templates/templates.module';
     TesteTresComponent,
     TesteQuadroComponent,
     TesteCincoComponent,
-    TesteSeisComponent
+    TesteSeisComponent,
+    MenuComponent,
+    EnviarDadosComponent
   ],
   imports: [
     BrowserModule,

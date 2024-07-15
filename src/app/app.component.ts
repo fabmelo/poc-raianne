@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'poc-raianne';
+
+  dados!: string;
+  voltou!: string;
+
+  public enviarDados(): void {
+    this.dados = "Indo!";
+  }
+
+  public receberDados(event: string): void {
+    this.dados = event;
+  }
+
 }

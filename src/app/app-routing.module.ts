@@ -31,7 +31,7 @@ const routes: Routes = [
   // Rota com Template
   {
     path: 'teste-modulo',
-    component: DefaultComponent,
+    component: DefaultComponent, // TEMPLATE
     children: [
       {
         path: '',
